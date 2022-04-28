@@ -198,6 +198,10 @@ header.nav-fixed {
     outline: 5px auto black;
 }
 
+.btn:not(:disabled):not(.disabled){
+    cursor: default;
+}
+
 @media only screen and (max-width: 991px) {
 
     header {
