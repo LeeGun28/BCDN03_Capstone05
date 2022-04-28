@@ -32,18 +32,199 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
-  <header></header>
-  <section class="portCarousel"></section>
-  <section class="about"></section>
-  <section class="features"></section>
-  <section class="services"></section>
-  <section class="number"></section>
-  <section class="plan"></section>
-  <section class="video"></section>
-  <section class="testimonial"></section>
-  <section class="email"></section>
-  <footer></footer>
+<body id="myBody">
+  <header id="site-header" class="fixed-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg stroke">
+        <h1><a class="navbar-brand" href="#">Pooch Care</a></h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+          aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+          <!-- <span class="navbar-toggler-icon fa icon-close fa-times"></span> -->
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-expanded="false">
+                Blog<span class="fa fa-angle-down"></span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Blog Sports</a>
+                <a class="dropdown-item" href="#">Blog single</a>
+                <a class="dropdown-item" href="#">Landing Page</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+          </ul>
+        </div>
+        <div class="mobile_nav">
+          <button class="btn" id="switchButton" title="Click to switch theme">
+            <i class="far fa-moon"></i>
+            <i class="far fa-sun"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="portCarousel">
+    <div class="owl-one owl-carousel owl-theme">
+      <div class="portCarousel__item">
+        <div class="portCarousel__bg overlay bg1">
+          <div class="container">
+            <div class="portCarousel__content">
+              <h5>Quality Things for Loving Pets</h5>
+              <p>Keeps your Pet Smiling</p>
+              <button class="mt-sm-5 mt-4 mr-2">Read More</button>
+              <button class="mt-sm-5 mt-4">Contact Us</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="portCarousel__item">
+        <div class="portCarousel__bg overlay bg2">
+          <div class="container">
+            <div class="portCarousel__content ml-auto">
+              <h5>Delivering happiness for Pets</h5>
+              <p>Keeps your Pet Smiling</p>
+              <button class="mt-sm-5 mt-4 mr-2">Read More</button>
+              <button class="mt-sm-5 mt-4">Contact Us</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="portCarousel__item">
+        <div class="portCarousel__bg overlay bg3">
+          <div class="container">
+            <div class="portCarousel__content">
+              <h5>Quality Things for Loving Pets</h5>
+              <p>Keeps your Pet Smiling</p>
+              <button class="mt-sm-5 mt-4 mr-2">Read More</button>
+              <button class="mt-sm-5 mt-4">Contact Us</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="portCarousel__item">
+        <div class="portCarousel__bg overlay bg4">
+          <div class="container">
+            <div class="portCarousel__content ml-auto">
+              <h5>Delivering happiness for Pets</h5>
+              <p>Keeps your Pet Smiling</p>
+              <button class="mt-sm-5 mt-4 mr-2">Read More</button>
+              <button class="mt-sm-5 mt-4">Contact Us</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about py-5">
+    <div class="container py-5">
+      <div class="about_content">
+        <h6>ABOUT US</h6>
+        <h3>We Love Your Pets Like They Are Our Own</h3>
+        <p class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio voluptatem
+          tenetur consequatur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+          Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis.</p>
+        <a href="#" class="read">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features py-5">
+    <div class="container py-lg-5 py-md-4">
+      <div class="row">
+        <div class="col-lg-4 col-sm-6">
+          <div class="features_item">
+            <div class="features_icon">
+              <i class="fa-regular fa-snowflake"></i>
+            </div>
+            <h4><a href="#">Dog Walking</a></h4>
+            <p>Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor sit amet Ut
+              blandit eu leo.</p>
+            <a href="#" class="read">Read More</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="features_item">
+            <div class="features_icon">
+              <i class="fa fa-utensils"></i>
+            </div>
+            <h4><a href="#">Healthy Meals</a></h4>
+            <p>Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor sit amet Ut
+              blandit eu leo.</p>
+            <a href="#" class="read">Read More</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="features_item">
+            <div class="features_icon">
+              <i class="fa fa-sign-language"></i>
+            </div>
+            <h4><a href="#">Pet Sitting</a></h4>
+            <p>Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor sit amet Ut
+              blandit eu leo.</p>
+            <a href="#" class="read">Read More</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="features_item">
+            <div class="features_icon">
+              <i class="fa fa-sitemap"></i>
+            </div>
+            <h4><a href="#">Dog Activities</a></h4>
+            <p>Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor sit amet Ut
+              blandit eu leo.</p>
+            <a href="#" class="read">Read More</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="features_item">
+            <div class="features_icon">
+              <i class="fa fa-shower"></i>
+            </div>
+            <h4><a href="#">Healthy Meals</a></h4>
+            <p>Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor sit amet Ut
+              blandit eu leo.</p>
+            <a href="#" class="read">Read More</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="features_item">
+            <div class="features_icon">
+              <i class="fa fa-user-md"></i>
+            </div>
+            <h4><a href="#">Pet Sitting</a></h4>
+            <p>Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor sit amet Ut
+              blandit eu leo.</p>
+            <a href="#" class="read">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
 
 
   <!-- JQUERY -->
@@ -56,10 +237,57 @@
     integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
     crossorigin="anonymous"></script>
 
+  <script>
+    $(window).on("scroll", function () {
+      var scroll = $(window).scrollTop();
+
+      if (scroll >= 80) {
+        $("#site-header").addClass("nav-fixed");
+      } else {
+        $("#site-header").removeClass("nav-fixed");
+      }
+    });
+  </script>
+
   <!-- OWL CAROUSEL -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.owl-one').owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: false,
+        responsiveClass: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplaySpeed: 1000,
+        autoplayHoverPause: false,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false
+          },
+          480: {
+            items: 1,
+            nav: false
+          },
+          667: {
+            items: 1,
+            nav: true
+          },
+          1000: {
+            items: 1,
+            nav: true
+          }
+        }
+      })
+    })
+  </script>
+
+  <!-- Theme dark - light -->
+  <script src="./js/darktheme.js"></script>
+
 
 </body>
 
