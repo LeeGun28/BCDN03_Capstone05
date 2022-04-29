@@ -256,6 +256,7 @@ header.nav-fixed {
 #switchButton.btn{
     padding: 0;
     width: 60px;
+    background-color: transparent;
 }
 
 #switchButton i {
@@ -303,6 +304,7 @@ header.nav-fixed {
 
 .dark header .navbar-nav .nav-link, .dark .dropdown-item {
     color: #dddddd;
+
 }
 
 .dark .dropdown-item:hover{
