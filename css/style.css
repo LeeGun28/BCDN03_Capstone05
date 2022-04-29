@@ -253,10 +253,13 @@ header.nav-fixed {
 
 
 /* THEME */
+button#switchButton.btn{
+    background-color: transparent;
+}
+
 #switchButton.btn{
     padding: 0;
     width: 60px;
-    background-color: transparent;
 }
 
 #switchButton i {
@@ -294,7 +297,7 @@ header.nav-fixed {
     display: none;
 }
 
-.dark#myBody,.dark #switchButton,.dark header, .dark .dropdown-menu,.dark .dropdown-menu::before, .dark .features_item {
+.dark#myBody,.dark header, .dark .dropdown-menu,.dark .dropdown-menu::before, .dark .features_item {
     background-color: #151515;
 }
 
