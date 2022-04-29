@@ -55,16 +55,15 @@ p {
     }
 }
 
-@media (min-width: 1478px){
-    .container {
-        padding: 0 25px;
+@media (min-width: 1280px){
+    .container{
+        max-width: 1200px;
     }
 }
 
-@media (min-width: 1200px){
-    .container, .container-xl, .container-lg, .container-md, .container-sm{
-        max-width: 1140px;
-        margin: 0 auto;
+@media (min-width: 1478px){
+    .container {
+        padding: 0 25px;
     }
 }
 
@@ -411,7 +410,7 @@ button#switchButton.btn{
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 70px;
+    bottom: 30px;
 }
 
 .owl-theme .owl-dots .owl-dot.active span,
