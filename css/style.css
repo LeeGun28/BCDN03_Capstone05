@@ -194,7 +194,7 @@ header.nav-fixed {
 }
 
 .navbar-expand-lg button.navbar-toggler:focus {
-    outline: 5px auto black;
+    outline: 5px auto -webkit-focus-ring-color;
 }
 
 .btn:not(:disabled):not(.disabled){
@@ -211,6 +211,10 @@ header.nav-fixed {
     header.nav-fixed{
         height: auto;
         padding: 10px 0;
+    }
+
+    .navbar-nav{
+        padding: 20px 0;
     }
 
     .navbar-toggler {
@@ -241,6 +245,10 @@ header.nav-fixed {
     .dropdown-item {
         text-align: center;
         width: auto;
+    }
+
+    .dropdown-item::before{
+        content: none;
     }
 
     .mobile_nav{
@@ -296,8 +304,17 @@ button#switchButton.btn{
     display: none;
 }
 
+.dark .features{
+    background-color: #222;
+}
+
 .dark#myBody,.dark header, .dark .dropdown-menu,.dark .dropdown-menu::before, .dark .features_item {
     background-color: #151515;
+    transition: all .5s;
+}
+
+.dark .features_item:hover{
+    background-color: transparent;
 }
 
 .dark h3,.dark .features_item a, .dark a.read{
@@ -330,6 +347,8 @@ button#switchButton.btn{
 .portCarousel__bg {
     min-height: calc(100vh - 40px);
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     position: relative;
@@ -441,6 +460,18 @@ button#switchButton.btn{
     }
 }
 
+@media (max-width: 768px) {
+    .portCarousel__bg{
+        min-height: 580px;
+    }
+}
+
+@media (max-width: 600px) {
+    .portCarousel__bg{
+        min-height: 500px;
+    }
+}
+
 @media (max-width: 480px) {
     .portCarousel__content h5 {
         font-size: 32px;
@@ -464,6 +495,8 @@ button#switchButton.btn{
 .about_content h6 {
     font-size: 18px;
     color: #f53626;
+    line-height: 36px;
+    letter-spacing: 1px;
 }
 
 .about_content h3 {
@@ -511,7 +544,7 @@ a.read:hover {
 
 /* FEATURES */
 .features {
-    background-color: rgb(147 107 232 / 5%);
+    background-color: rgb(147 107 232 / 0.05);
 }
 
 .features_item {
@@ -538,9 +571,8 @@ a.read:hover {
     text-decoration: none;
     display: block;
     margin: 25px 0 15px;
-    transition: all .5s;
 }
 
-.features_item h4:hover a {
+.features_item h4 a:hover {
     color: #189a46;
 }
